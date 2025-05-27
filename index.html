@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulai High School Data</title>
+    <title>Dulai High School Data collection</title>
     <style>
         /* Basic CSS for responsiveness and styling */
         body {
@@ -75,8 +75,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Dholai High School Alumni Data Collection</h1>
-        <p>Welcome to the Dholai High School alumni data collection page. Please fill out the form below to help us update our records and connect with fellow alumni.</p>
+        <h1>Dulai High School Data Collection</h1>
+        <p>Welcome to the Dulai High School data collection page. Please fill out the form below to help us update our records and connect with fellow alumni.</p>
         <hr>
 
         <form id="alumniForm">
@@ -105,6 +105,7 @@
                     <option value="L">L</option>
                     <option value="XL">XL</option>
                     <option value="XXL">XXL</option>
+                    <option value="3XL">3XL</option>
                 </select>
             </div>
 
@@ -144,7 +145,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const batchYearSelect = document.getElementById('batchYear');
             const currentYear = new Date().getFullYear();
-            for (let year = 1990; year <= 2050; year++) {
+            for (let year = 1990; year <= 2025; year++) {
                 let option = document.createElement('option');
                 option.value = year;
                 option.textContent = year;
